@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>div{
+            padding-left: 100px;
+        }
+        .ravi1{
+            position: relative;
+            display: inline-block;
+        }
+        .teja1{
+            left: 0;
+            position: absolute;
+        }
+
+        .ravi1 .teja1{
+            visibility: hidden;
+            height: 100px;
+            width: 10px;
+            position: absolute;
+            left: 0px;
+            right: 100px;
+        
+        }
+        .ravi1:hover .teja1{
+            width:150px;
+            height:100px;
+            background-color: antiquewhite;
+            visibility: visible;
+            transition:all 5s;
+        
+        }
+        .ravi2{
+            position: relative;
+            display: inline-block;
+        
+    
+        }
+        .teja2{
+            left: 0px;
+            bottom: -200px;
+            position: absolute;
+        
+        }
+        .ravi2 .teja2{
+            visibility: hidden;
+            height: 100px;
+            width: 0px;
+            position: absolute;
+            left: 0px;
+            right: 200px;
+        
+        }
+        .ravi2:hover .teja2{
+            height: 100px;
+            width:150px;
+            left: 0px;
+            background-color: antiquewhite;
+            visibility: visible;
+            transition: all 5s;
+        }
+        .ravi3{
+           
+            position: relative;
+            display: inline-block;
+
+        }
+        .ravi3 .teja3{
+            visibility: hidden;
+            height: 100px;
+            width: 0px;
+            left:0px;
+            position: absolute;
+        }
+        .ravi3:hover .teja3{
+            height:100px;
+            width:140px;
+            background-color: antiquewhite;
+            visibility: visible;
+            transition: all 5s;
+        }
+        .ravi4{
+            position: relative;
+            display: inline-block;
+        }
+        .teja4{
+            margin-left:0;
+        }
+        .ravi4 .teja4{
+            visibility: hidden;
+            height: 100px;
+            width: 0px;
+            left: 0px;
+            position: absolute;
+        }
+        .ravi4:hover .teja4{
+            width:100px;
+            height:100px;
+            visibility: visible;
+            background-color: antiquewhite;
+           transition: all 5s;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <!-- <div><img src="./Images/Dhoni.jpg" alt="" width="100px" height="100px"></div> -->
+        <div class="ravi1"><h1  >25</h1>
+            <!-- <img src="./Images/Dhoni.jpg" alt=""  class="teja1"> -->
+            <diV class="teja1"></diV>
+        
+        </div>
+        <div class="ravi2"><h1>50</h1>
+            <!-- <img src="./Images/Dhoni.jpg" alt=""  class="teja2"> -->
+            <div class="teja2"></div>
+        </div>
+        <div class="ravi3"><h1>75</h1>
+            <!-- <img src="./Images/Dhoni.jpg" alt=""  class="teja3"> -->
+            <div class="teja3"></div>
+        </div>
+        <div class="ravi4"><h1>100</h1>
+            <!-- <img src="./Images/Dhoni.jpg" alt=""  class="teja4"> -->
+            <div class="teja4"></div>
+            
+        </div>
+    </div>
+</body>
+</html>

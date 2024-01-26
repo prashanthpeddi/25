@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #boxfill, #textloading {
+        margin-top: 25px;
+        }
+        button {
+            color: rgb(14, 14, 13);
+            margin: 50px;
+        }
+        .hidden1 {
+            color: white;
+            background-color:rgb(244, 188, 116);
+            width: 150px;
+            height: 50px;
+            margin-left: 25px;
+            opacity: 0;
+            transition: width 1s, opacity 1s;
+        }
+        .hidden2 {
+            color: white;
+            background-color:rgb(244, 188, 106);
+            width: 300px;
+            height: 50px;
+            margin-left: 25px;
+            opacity: 0;
+            transition: width 1s, opacity 1s;
+        }
+        .hidden3 {
+            color: white;
+            background-color: rgb(244, 188, 106);
+            width: 450px;
+            height: 50px;
+            margin-left: 25px;
+            opacity: 0;
+            transition: width 1s, opacity 1s;
+        }
+        .hidden4 {
+            color: white;
+            background-color: rgb(244, 188, 106);
+            width: 600px;
+            height: 50px;
+            margin-left: 25px;
+            opacity: 0;
+            transition: width 1s, opacity 1s;
+            text-align: center;
+        }
+        .quarter:hover ~ .hidden1 {
+            opacity: 1;
+        }
+        .half:hover ~ .hidden2 {
+            opacity: 1;
+        }
+        .thrice:hover ~ .hidden3 {
+            opacity: 1;
+        }
+        .full:hover ~ .hidden4 {
+            opacity: 1;
+        }
+        @keyframes anime {
+            0% { opacity: 0;}
+            25% { opacity: 0.25;}
+            50% { opacity: 0.5;}
+            75% { opacity: 0.75;}
+            100% { opacity: 1;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Background Color Transition</h1>
+        <br>
+        <button class="quarter">25%</button>
+        <button class="half">50%</button>
+        <button class="thrice">75%</button>
+        <button class="full">100%</button>
+        <h2 class="hidden1"> Loading..</h2>
+        <h2 class="hidden2">Loading..</h2>
+        <h2 class="hidden3"> Loading..</h2>
+        <h2 class="hidden4">Done</h2>
+    </div>
+</body>
+</html>
+
+
+
